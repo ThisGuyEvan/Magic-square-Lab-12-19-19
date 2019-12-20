@@ -37,9 +37,15 @@ class Main {
       
     }
 
-    System.out.println(Arrays.deepToString(magicDimensions) + "\n\n");
+    System.out.println("Edit the text file \"magicSquare.txt\" to change up the program.\nEx:\n2,7,6\n9,5,1\n4,3,8\n\n______________________________________________");
 
-    System.out.println("Is a magic square? " + magicSquare(magicDimensions));
+    System.out.println(Arrays.deepToString(magicDimensions) + "\n\n");
+    if (square.size() == 0){
+      System.out.println("Invaild Square Parameters.");
+    }
+    else{
+      System.out.println("Is a magic square? " + magicSquare(magicDimensions));
+    }
 
     console.close();
 
